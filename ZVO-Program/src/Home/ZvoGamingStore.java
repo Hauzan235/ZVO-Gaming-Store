@@ -13,4 +13,12 @@ public class ZvoGamingStore {
     public void game3(){
         System.out.print("3. ");
     }
+
+    public void game4(){
+        System.out.print("4. ");
+    }
+
+    public void game5(){
+        System.out.print("5. ");
+    }
 }

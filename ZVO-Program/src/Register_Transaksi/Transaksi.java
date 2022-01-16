@@ -1,4 +1,4 @@
-package ZVO_Buy_Voucher.Class;
+package Register_Transaksi;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Transaksi {
     public void show() {
         Scanner in = new Scanner(System.in);
         String perintah = "";
-        int pilihan, jumlah, jumlah1 = 0, jumlah2, harga, diskon;
+        int pilihan, jumlah, jumlah2, harga, diskon;
         double total = 0;
         System.out.print("Masukkan Pilihan Angka = ");
         pilihan = in.nextInt();
@@ -24,8 +24,6 @@ public class Transaksi {
                     jumlah = in.nextInt();
                     harga = 200 * jumlah;
                     System.out.println("Harga = Rp. " + harga);
-                    if (jumlah % 5 >= 0) {
-                    }
                     jumlah2 = jumlah ;
 
                     if (harga > 50000) {
@@ -49,8 +47,6 @@ public class Transaksi {
                     jumlah = in.nextInt();
                     harga = 150 * jumlah;
                     System.out.println("Harga = Rp. " + harga);
-                    if (jumlah % 5 >= 0) {
-                    }
                     jumlah2 = jumlah ;
 
                     if (harga > 25000) {
@@ -74,8 +70,6 @@ public class Transaksi {
                     jumlah = in.nextInt();
                     harga = 145 * jumlah;
                     System.out.println("Harga = Rp. " + harga);
-                    if (jumlah % 5 >= 0) {
-                    }
                     jumlah2 = jumlah ;
 
                     if (harga > 24000) {
@@ -99,9 +93,6 @@ public class Transaksi {
                     jumlah = in.nextInt();
                     harga = 300 * jumlah;
                     System.out.println("Harga = Rp. " + harga);
-                    if (jumlah % 5 >= 0) {
-
-                    }
                     jumlah2 = jumlah ;
 
                     if (harga > 35000) {
@@ -125,13 +116,10 @@ public class Transaksi {
                     jumlah = in.nextInt();
                     harga = 5000 * jumlah;
                     System.out.println("Harga = Rp. " + harga);
-                    if (jumlah % 5 >= 0) {
-
-                    }
                     jumlah2 = jumlah ;
 
                     if (harga > 10000) {
-                        diskon = harga * 1 / 100;
+                        diskon = harga / 100;
                         harga = harga - diskon;
                         System.out.println("Pembelian anda > 10000, Anda mendapat diskon 1% = Rp. " + diskon);
                     }
