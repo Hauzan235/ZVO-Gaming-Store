@@ -12,6 +12,7 @@ public class Main {
 
     public static String input;
 
+    //Method Main
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println(" ");
@@ -24,8 +25,8 @@ public class Main {
         input = in.nextLine();
         System.out.println();
 
-        //Loop
-        while (input.equals("login")) {
+
+        if (input.equals("login")) {
 
 
             System.out.print("Username        : ");
@@ -34,6 +35,7 @@ public class Main {
             String Lpassword = in.nextLine();
             input = in.nextLine();
 
+            //Implementasi PBO = Polimorfisme
             ZvoGamingStore game = new ZvoGamingStore();
             GamePopuler st = new GamePopuler();
             st.Game1("PUBG");
@@ -73,7 +75,7 @@ public class Main {
 
 
         }
-        while (input.equals("register")) {
+        if (input.equals("register")) {
 
             System.out.print("Username        : ");
             String Username = in.nextLine();

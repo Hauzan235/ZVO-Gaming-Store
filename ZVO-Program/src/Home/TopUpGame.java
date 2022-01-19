@@ -1,6 +1,8 @@
 package Home;
 
 public class TopUpGame extends ZvoGamingStore{
+
+    //Inheritance
     private String game1;
     private String game2;
     private String game3;

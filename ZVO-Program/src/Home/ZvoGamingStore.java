@@ -1,7 +1,9 @@
 package Home;
 
+
+//Method Class
 public class ZvoGamingStore {
-    // public method
+
     public void game1(){
         System.out.print("1. ");
     }
